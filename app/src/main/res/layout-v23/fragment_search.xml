@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.SearchFragment"
+    tools:showIn="@layout/activity_main"
+    tools:ignore="MergeRootFrame,Autofill,RtlHardcoded">
+
+  <androidx.core.widget.NestedScrollView
+      android:id="@+id/dataAssetsScrollView"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:fillViewport="true"
+      android:visibility="gone"
+      app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+      <androidx.constraintlayout.widget.ConstraintLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/dataAssetsFoundTextView"
+            style="@style/DataAssetTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/sortButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageButton
+            android:id="@+id/sortButton"
+            android:contentDescription="@string/sort_button_content_description"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:background="@drawable/ic_sort"
+            app:layout_constraintBottom_toTopOf="@+id/dataAssetsFoundTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dataAssetsFoundTextView" />
+
+      </androidx.constraintlayout.widget.ConstraintLayout>
+
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/recyclerViewMain"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+  </androidx.core.widget.NestedScrollView>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/searchQueryEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:hint="@string/search_query_hint"
+        android:gravity="center_horizontal"
+        android:backgroundTint="#e070d7"
+        android:textColorHint="@drawable/edit_text_selector"
+        app:layout_constraintBottom_toTopOf="@+id/searchButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="?android:attr/actionBarSize"
+        android:text="@string/search_button_text"
+        android:fontFamily="@font/oneday"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:foreground="?attr/selectableItemBackground"
+        android:background="@drawable/search_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchQueryEditText"
+        app:layout_constraintBottom_toBottomOf="parent" />
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+  <TextView
+      android:id="@+id/emptySearchWarningTextView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:layout_marginStart="16dp"
+      android:layout_marginLeft="16dp"
+      android:layout_marginEnd="16dp"
+      android:layout_marginRight="16dp"
+      android:layout_marginBottom="28dp"
+      android:text="@string/empty_search_warning"
+      android:visibility="gone" />
+
+  <ProgressBar
+      android:id="@+id/progressBar"
+      android:layout_width="50dp"
+      android:layout_height="50dp"
+      android:layout_gravity="center"
+      android:layout_marginBottom="28dp"
+      android:visibility="gone" />
+
+</FrameLayout>

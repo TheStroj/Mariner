@@ -1,0 +1,87 @@
+<resources
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="PluralsCandidate">
+
+    <string name="app_name">Mariner</string>
+    <string name="title_activity_info">"Mariner Information"</string>
+    <string name="tab_text_1">Search</string>
+    <string name="tab_text_2">Favorites</string>
+
+    <string name="ships_wheel_content_description">Ship\'s Wheel Icon</string>
+    <string name="triangle_content_description">Triangle Icon</string>
+    <string name="marketplace_logo_content_description">Marketplace Logo</string>
+    <string name="sort_button_content_description">Sort Button</string>
+
+    <string name="search_query_hint">Browse Data Assets</string>
+    <string name="search_button_text">Search</string>
+    <string name="empty_search_warning">No data assets found.</string>
+    <string name="empty_favorites_warning">No favorite data assets.</string>
+    <string name="internet_connection_toast">No Internet connection detected, please try
+        reconnecting.</string>
+
+    <string name="about_text">MARINER is an app for searching, browsing through and bookmarking data
+        assets published across all Ocean Protocol data marketplaces.</string>
+    <string name="mariner_data_assets_total">MARINER returned %1$d data assets to your queries so
+        far.</string>
+    <string name="mariner_data_assets_total_default">MARINER returned 0 data assets to your queries
+        so far.</string>
+    <string name="op_text"><a href="https://oceanprotocol.com">Ocean Protocol</a> is a decentralized
+        data exchange protocol built to unlock data for AI and start a new data economy.</string>
+    <string name="op_copyright_text">© 2020 Ocean Protocol Foundation Ltd.</string>
+    <string name="op_help">A special thanks to Alex, Sarah and Beth from the Ocean Protocol team for
+        the help in making this app possible, and for providing the ship\'s wheel icon!</string>
+    <string name="font_credit">Uses the beautiful
+        <a href="https://www.behance.net/gallery/50462399/FREE-One-Day-Typeface">One Day</a> font by
+        Nawras Moneer.</string>
+    <string name="author_text">Made with love by Simon Mezgec</string>
+    <string name="author_email_text">simon.mezgec@gmail.com</string>
+    <string name="quote_author">— %1$s</string>
+    <string name="quotation_mark_left">\u201C</string>
+    <string name="quotation_mark_right">\u201D</string>
+
+    <string name="sort_default">sort by <b>Default</b></string>
+    <string name="sort_name">sort by <b>Name</b></string>
+    <string name="sort_date">sort by <b>Date</b></string>
+    <string name="sort_author">sort by <b>Author</b></string>
+    <string name="sort_price">sort by <b>Price</b></string>
+    <string name="price_free">Free</string>
+    <string name="price_paid">Paid</string>
+    <string name="by_author">by %1$s</string>
+    <string name="data_assets_found_single">%1$d Data Asset Found</string>
+    <string name="data_assets_found_multiple">%1$d Data Assets Found</string>
+    <string name="data_assets_favorite_single">%1$d Favorite Data Asset</string>
+    <string name="data_assets_favorite_multiple">%1$d Favorite Data Assets</string>
+
+    <string name="default_data_quote">Without big data, you are blind and deaf and in the middle of
+        a freeway.</string>
+    <string name="default_data_quote_author">Geoffrey Moore</string>
+
+    <string-array name="data_quotes">
+        <item>Without big data, you are blind and deaf and in the middle of a freeway.</item>
+        <item>In God we trust, all others bring data.</item>
+        <item>Data is the new oil.</item>
+        <item>With data collection, \'the sooner the better\' is always the best answer.</item>
+        <item>Without a systematic way to start and keep data clean, bad data will happen.</item>
+        <item>You can have data without information, but you cannot have information without
+            data.</item>
+        <item>Above all else, show the data.</item>
+        <item>Big data is at the foundation of all of the megatrends that are happening today, from
+            social to mobile to the cloud to gaming.</item>
+        <item>Data really powers everything that we do.</item>
+        <item>Errors using inadequate data are much less than those using no data at all.</item>
+    </string-array>
+
+    <string-array name="data_quotes_authors">
+        <item>Geoffrey Moore</item>
+        <item>William Edwards Deming</item>
+        <item>Clive Robert Humby</item>
+        <item>Marissa Ann Mayer</item>
+        <item>Donato Diorio</item>
+        <item>Daniel Keys Moran</item>
+        <item>Edward Rolf Tufte</item>
+        <item>Chris Lynch</item>
+        <item>Jeffrey Weiner</item>
+        <item>Charles Babbage</item>
+    </string-array>
+
+</resources>

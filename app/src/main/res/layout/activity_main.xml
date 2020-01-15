@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:background="@drawable/activity_background"
+        android:fitsSystemWindows="true"
+        android:onClick="launchAppInfo"
+        android:focusable="true"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:minHeight="?actionBarSize"
+            android:text="@string/app_name"
+            android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+            android:fontFamily="@font/oneday"
+            app:layout_scrollFlags="scroll|enterAlways" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        app:layout_anchor="@id/view_pager"
+        app:layout_anchorGravity="bottom|right|end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:focusable="true"
+        android:clickable="true"
+        android:visibility="visible"
+        app:srcCompat="@drawable/ic_search"
+        app:elevation="12dp"
+        app:borderWidth="0dp" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

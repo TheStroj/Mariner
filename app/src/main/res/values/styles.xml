@@ -1,0 +1,34 @@
+<resources>
+
+  <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+    <item name="android:textAppearanceLargePopupMenu">@style/myPopupMenuTextAppearanceLarge</item>
+    <item name="android:textAppearanceSmallPopupMenu">@style/myPopupMenuTextAppearanceSmall</item>
+  </style>
+
+  <style name="AppTheme.NoActionBar">
+    <item name="windowActionBar">false</item>
+    <item name="windowNoTitle">true</item>
+  </style>
+
+  <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+  <style name="myPopupMenuTextAppearanceLarge"
+      parent="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Large">
+    <item name="android:textColor">@android:color/tab_indicator_text</item>
+  </style>
+
+  <style name="myPopupMenuTextAppearanceSmall"
+      parent="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small">
+    <item name="android:textColor">@android:color/tab_indicator_text</item>
+  </style>
+
+  <style name="DataAssetTextViewStyle">
+    <item name="android:layout_width">@dimen/constraint_layout_default_dimension</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:singleLine">true</item>
+  </style>
+
+</resources>
