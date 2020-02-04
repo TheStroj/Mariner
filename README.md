@@ -1,10 +1,9 @@
 # MARINER
 
-MARINER is an Ocean Protocol explorer for Android. It's a submission to the Data Economy Challenge.
+MARINER is an Ocean Protocol explorer for Android.
 
-MARINER will be uploaded to the Google Play Store shortly.
+It is available on the Google Play Store: https://play.google.com/store/apps/details?id=dev.simonmezgec.mariner
 
-Meanwhile, the release install file (.apk) can be found here:
-https://drive.google.com/file/d/1AQyHMYRbgC2VFWGMSWJI26RbDWzD8Qry/view
+You can read more about MARINER here: https://medium.com/@simon.mezgec/building-mariner-f66e50fa5053
 
 The keystore file, keys, aliases and passwords used to create and sign the release install file are edited out of the code. The code can still be used to generate a debug version of the app, otherwise new keystore information needs to be provided.
